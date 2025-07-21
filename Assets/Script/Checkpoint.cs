@@ -1,15 +1,18 @@
 using UnityEngine;
 
-public class Checpoint : MonoBehaviour
+namespace Script
 {
-
-    [SerializeField]
-    GameObject finalCheckpoint;
-    [SerializeField]
-    int numberOfCheckpoint;
-
-    private void OnCollisionEnter(Collision collision)
+    public class Checkpoint : MonoBehaviour
     {
-        finalCheckpoint.GetComponent<finalCheckpoint>().checkPointPassed(numberOfCheckpoint);
+
+        [SerializeField]
+        GameObject finalCheckpoint;
+        [SerializeField]
+        int numberOfCheckpoint;
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            finalCheckpoint.GetComponent<finalCheckpoint>().checkPointPassed(numberOfCheckpoint);
+        }
     }
 }

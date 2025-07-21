@@ -42,10 +42,11 @@ GameObject:
   - component: {fileID: 3909866731313821200}
   - component: {fileID: 6935435618172708250}
   - component: {fileID: 5575805699510085009}
+  - component: {fileID: 2771847249135740244}
   - component: {fileID: 3573264796481727149}
   - component: {fileID: 2703921812570761453}
   m_Layer: 0
-  m_Name: PaperPlane
+  m_Name: paperPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,6 +117,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2771847249135740244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4860722871309942700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f045f3fbaa5d3b4bb52321c2f2d04ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  rb: {fileID: 5575805699510085009}
+  pressButton: {fileID: 7108636777434739299, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  active: 0
 --- !u!114 &3573264796481727149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +197,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2771847249135740244}
+        m_TargetAssemblyTypeName: Script.BackToPose, Assembly-CSharp
+        m_MethodName: Release
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -192,7 +221,19 @@ MonoBehaviour:
       m_Calls: []
   m_FocusEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2771847249135740244}
+        m_TargetAssemblyTypeName: Script.BackToPose, Assembly-CSharp
+        m_MethodName: Release
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FocusExited:
     m_PersistentCalls:
       m_Calls: []
