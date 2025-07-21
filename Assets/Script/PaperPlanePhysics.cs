@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Script
 {
@@ -9,11 +8,12 @@ namespace Script
         [SerializeField][Range(0f,1f)] private float portance;
         [SerializeField][Range(0f,5f)] private float lifting;
         [SerializeField][Range(0f,50f)] private float weight;
-        
+        [SerializeField] [Range(0f,1f)] private float stability;
         
         private void FixedUpdate()
         {
             rb.rotation *= Profondeur(rb.linearVelocity, rb.rotation) * Weight(rb.rotation);
+            rb.inertiaTensorRotation = Quaternion.Euler(rb.inertiaTensorRotation.eulerAngles * (1-stability));
             rb.linearVelocity = Portance(rb.linearVelocity, rb.rotation) * Friction(rb.linearVelocity, rb.rotation);
         }
 
