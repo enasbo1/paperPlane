@@ -8,11 +8,21 @@ public class finalCheckpoint : MonoBehaviour
     private int counter = 0;
     public void checkPointPassed (int i)
     {
-        if (counter == i + 1)
+        if (counter+1 == i)
         {
+            Debug.Log("good check");
             counter++;
         }
-        else counter = 0;
+        else
+        {
+            counter = 0;
+            Debug.Log("bad check");
+            if (i == 1)
+            {
+                counter++;
+            }
+        }
+
     }
 
     public void OnCollisionEnter(Collision collision)

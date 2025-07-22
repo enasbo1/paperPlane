@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 1804350212}
+  destination: {fileID: 1804350212}
   numberOfCheckpoint: 1
 --- !u!65 &3934546
 BoxCollider:
@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 996275247}
+  destination: {fileID: 996275247}
   numberOfCheckpoint: 1
 --- !u!65 &613686976
 BoxCollider:
@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 976479504}
+  destination: {fileID: 976479504}
   numberOfCheckpoint: 3
 --- !u!65 &750027850
 BoxCollider:
@@ -1384,7 +1384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 1804350212}
+  destination: {fileID: 1804350212}
   numberOfCheckpoint: 2
 --- !u!65 &816700471
 BoxCollider:
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 1804350212}
+  destination: {fileID: 1804350212}
   numberOfCheckpoint: 3
 --- !u!65 &877155836
 BoxCollider:
@@ -2380,7 +2380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 976479504}
+  destination: {fileID: 976479504}
   numberOfCheckpoint: 1
 --- !u!65 &1469581676
 BoxCollider:
@@ -2818,7 +2818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 976479504}
+  destination: {fileID: 976479504}
   numberOfCheckpoint: 4
 --- !u!65 &1520827779
 BoxCollider:
@@ -3144,7 +3144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 708669001}
+  destination: {fileID: 708669001}
   numberOfCheckpoint: 2
 --- !u!65 &1821421834
 BoxCollider:
@@ -3351,7 +3351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 976479504}
+  destination: {fileID: 976479504}
   numberOfCheckpoint: 2
 --- !u!65 &1923520939
 BoxCollider:
@@ -3502,7 +3502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 708669001}
+  destination: {fileID: 708669001}
   numberOfCheckpoint: 1
 --- !u!65 &2069112505
 BoxCollider:
@@ -3672,6 +3672,10 @@ PrefabInstance:
       propertyPath: _active
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2771847249135740244, guid: b81a7862bb0776a46b8f3a0e5566c9ed, type: 3}
+      propertyPath: pressButton
+      value: 
+      objectReference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 3573264796481727149, guid: b81a7862bb0776a46b8f3a0e5566c9ed, type: 3}
       propertyPath: weight
       value: 40
@@ -3935,8 +3939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62841318458e3dd40922fafe2c7f730e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCheckpoint: {fileID: 1502395547}
-  numberOfCheckpoint: 0
+  destination: {fileID: 1502395547}
+  numberOfCheckpoint: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

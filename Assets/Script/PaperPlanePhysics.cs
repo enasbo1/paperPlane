@@ -9,12 +9,15 @@ namespace Script
         [SerializeField][Range(0f,45f)] private float lifting;
         [SerializeField][Range(0f,75f)] private float weight;
         [SerializeField] [Range(0f,1f)] private float stability;
-        
+
         private void FixedUpdate()
         {
-            rb.rotation *= Profondeur(rb.linearVelocity, rb.rotation) * Weight(rb.rotation);
-            rb.angularVelocity *= 1-stability;
-            rb.linearVelocity = Portance(rb.linearVelocity, rb.rotation) * Friction(rb.linearVelocity, rb.rotation);
+            if (!rb.isKinematic)
+            {
+                rb.rotation *= Profondeur(rb.linearVelocity, rb.rotation) * Weight(rb.rotation);
+                rb.angularVelocity *= 1 - stability;
+                rb.linearVelocity = Portance(rb.linearVelocity, rb.rotation) * Friction(rb.linearVelocity, rb.rotation);
+            }
         }
 
         private Vector3 Portance(Vector3 velocity, Quaternion rotation)

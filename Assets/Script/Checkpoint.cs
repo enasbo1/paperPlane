@@ -6,13 +6,13 @@ namespace Script
     {
 
         [SerializeField]
-        GameObject finalCheckpoint;
+        GameObject destination;
         [SerializeField]
         int numberOfCheckpoint;
 
         private void OnCollisionEnter(Collision collision)
         {
-            finalCheckpoint.GetComponent<finalCheckpoint>().checkPointPassed(numberOfCheckpoint);
+            destination.GetComponent<finalCheckpoint>().checkPointPassed(numberOfCheckpoint);
         }
     }
 }

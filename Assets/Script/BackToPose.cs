@@ -22,12 +22,18 @@ namespace Script
 
         private void Update()
         {
+            if (pressButton.action.IsInProgress()) Recall();
+
             if (!active) return;
-            
-            rb.position = target.position;
-            rb.rotation = target.rotation;
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
+
+            if (!rb.isKinematic)
+            {
+                rb.position = target.position;
+                rb.rotation = target.rotation;
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+            }
+         
         }
 
         public void Recall()
