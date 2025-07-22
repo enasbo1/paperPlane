@@ -10,13 +10,13 @@ public class finalCheckpoint : MonoBehaviour
     {
         if (counter+1 == i)
         {
-            Debug.Log("good check");
+            Debug.Log("good check" + i);
             counter++;
         }
         else
         {
             counter = 0;
-            Debug.Log("bad check");
+            Debug.Log("bad check" + i);
             if (i == 1)
             {
                 counter++;
